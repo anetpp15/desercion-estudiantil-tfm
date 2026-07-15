@@ -6,7 +6,7 @@ Este repositorio contiene el desarrollo y cuaderno de código correspondientes a
 
 Haz clic en el siguiente enlace para ejecutar el código en Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anetpp15/desercion-estudiantil-tfm/blob/main/AvanceDeserEstudiantilOKTFM.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anetpp15/desercion-estudiantil-tfm/blob/main/DesercionEstudiantilOKTFM.ipynb)
 
 **Nota:** Al abrir el entorno en Colab, asegúrate de cargar los conjuntos de datos necesarios (dataset) en la sección de archivos del panel lateral antes de ejecutar las celdas de código.
 
