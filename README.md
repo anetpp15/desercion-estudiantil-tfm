@@ -1,25 +1,38 @@
-# Comparación De Algoritmos De Machine Learning Con Interpretabilidad SHAP Para La Predicción Temprana De Deserción Estudiantil En Educación Superior
+# Comparación de algoritmos de Machine Learning con interpretabilidad SHAP para la predicción temprana de deserción estudiantil en educación superior
 
-Este repositorio contiene el desarrollo y cuaderno de código correspondientes al Trabajo de Fin de Máster (TFM) enfocado en la comparación de algoritmos de ML con interpretabilidad SHAP, para la predicción de la deserción estudiantil.
+Este repositorio contiene el código del Trabajo de Fin de Máster (TFM) dedicado a comparar algoritmos de aprendizaje automático, con interpretabilidad SHAP, para predecir la deserción estudiantil en educación superior.
 
-## Ejecución del Proyecto
+## Contenido del repositorio
 
-Haz clic en el siguiente enlace para ejecutar el código en Google Colab:
+| Fichero | Descripción |
+|---|---|
+| `DesercionEstudiantil_TFM_final.ipynb` | Cuaderno con el pipeline completo: carga y depuración de datos, entrenamiento, evaluación e interpretabilidad de los modelos. |
+| `figuras_memoria.py` | Script que genera las figuras incluidas en la memoria a partir de los resultados del cuaderno. |
+| `dataset.csv` | Copia de respaldo del conjunto de datos original. |
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anetpp15/desercion-estudiantil-tfm/blob/main/DesercionEstudiantilOKTFM.ipynb)
+## Datos
 
-**Nota:** Al abrir el entorno en Colab, asegúrate de cargar los conjuntos de datos necesarios (dataset) en la sección de archivos del panel lateral antes de ejecutar las celdas de código.
+El conjunto de datos procede de Kaggle: [Higher Education Predictors of Student Retention](https://www.kaggle.com/datasets/thedevastator/higher-education-predictors-of-student-retention). El cuaderno lo descarga automáticamente al ejecutarse, por lo que no es necesario subir ningún archivo.
 
-## Tecnologías y Librerías Utilizadas
+## Ejecución del proyecto
 
-**Entorno:** Google Colaboratory
-**Lenguaje:** Python 3
-**Librerías principales:** 
-  * `pandas` y `numpy` (Tratamiento y limpieza de datos)
-  * `matplotlib` (Visualización de datos)
-  * `scikit-learn` (Modelado predictivo y evaluación)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anetpp15/desercion-estudiantil-tfm/blob/main/DesercionEstudiantil_TFM_final.ipynb)
 
-## Instrucciones de Uso
-1. Haz clic en el botón de **Open in Colab** superior.
-2. Si el proyecto requiere un dataset externo, debes subirlo al almacenamiento temporal de Colab.
-3. Ejecuta las celdas en orden secuencial, podría ser seleccionando **Entorno de ejecución > Ejecutar todas** en el menú superior.
+1. Pulsa el botón **Open in Colab**.
+2. Ejecuta las celdas en orden, por ejemplo con **Entorno de ejecución > Ejecutar todas**.
+3. Para generar las figuras de la memoria, ejecuta al final del cuaderno una celda con:
+
+   ```python
+   !wget -q https://raw.githubusercontent.com/anetpp15/desercion-estudiantil-tfm/main/figuras_memoria.py
+   %run -i figuras_memoria.py
+   ```
+
+## Tecnologías y librerías
+
+**Entorno:** Google Colaboratory  
+**Lenguaje:** Python 3  
+**Librerías principales:**
+- `pandas` y `numpy`: tratamiento y limpieza de datos
+- `matplotlib`: visualización
+- `scikit-learn`: modelado predictivo y evaluación
+- `shap`: interpretabilidad de los modelos
